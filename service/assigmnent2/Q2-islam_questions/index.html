@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3 id="ans"></h3>
+    <script>
+        let ask = confirm("Ma doonaysaa inaa ku weydiiyo suaal diinia ah? (ok==haa, cancel=maya)")
+        if (ask == true){
+            let askUser = Number(prompt("Waa imisa Tiirarka islaamka?"));
+            if (askUser == 5) {
+                let mentionThem = Number(prompt(`sheeg tiirka 5aad ee islaamka?
+                1-xajka 
+                2-soonka
+                3-salaada`))
+                if (mentionThem == 1){
+                    let mentionThem = Number(prompt(`sheeg tiirka 2aad ee islaamka?
+                    1-soonka
+                    2-salaada
+                    3-xajka`))
+                    if(mentionThem == 2){
+                        document.getElementById("ans").innerHTML="Marks:3"
+                        document.getElementById("ans").style.margin=0;
+                    }
+                    else {
+                        document.getElementById("ans").innerHTML="Marks: 2"
+                        document.getElementById("ans").style.margin=0;
+                    }
+
+                }
+                else{
+                    document.getElementById("ans").innerHTML="Marks: 1"
+                    document.getElementById("ans").style.margin=0;
+                }
+            }
+            else{
+                document.getElementById("ans").innerHTML="Marks: 0"
+                document.getElementById("ans").style.margin=0;
+            }
+        }
+
+        else{
+            document.getElementById("ans").innerHTML="Ok"
+            document.getElementById("ans").style.margin=0;
+        }
+    </script>
+</body>
+</html>

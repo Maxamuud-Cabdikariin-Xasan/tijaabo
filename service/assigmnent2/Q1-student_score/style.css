@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding:0
+}
+body{
+    margin:0;
+    background-color:#230c48;
+    font-family: lato;
+}
+/* .main{
+    width: 50%;
+    margin:0 auto;
+} */
+h1::selection {
+    background-color: white;
+    color:#230c48;
+}
+
+
+h1{
+    color:tomato;
+    text-align: center;
+    font-size:5em;
+    border-bottom:3px solid white;
+}
+h5::selection{
+    background-color: white;
+    color:#230c48
+}
+
+h2{
+    color:tomato;
+    text-align: left;
+    
+}
+p{
+    margin:0.5em;
+    text-align: left;
+    color:#fff;
+    font-size: 1.4em;
+}
+.main {
+    margin:1.8em;
+}
+
+.sub-title h2{
+    font-size: 2.3em;
+    transition: 0.5s;
+}
+.result div{
+    display: flex;
+    color:tomato;
+    font-size: 2.1em;
+    margin-right:1.3em;
+    transition: 0.5s;
+}
+.result h5{
+    color:#230c48;
+}
+.result {
+    background-color:#fff;
+    padding:6px 10px;
+    width: 71%;
+    margin:auto;
+    display: flex;
+}
+
+#grade,#avg,#total,#gpa{
+    color:tomato;
+    
+}
+
+
+.score-btn{
+    color:tomato;
+    font-weight: bold;
+    background-color: #fff;
+    position: absolute;
+    padding:5px 10px;
+    cursor: pointer;
+    top:50%;
+    left:50%;
+}
+.score-btn:hover{
+    background-color: #dddddd;
+}
+.score-btn:focus{
+    background-color: green;
+}
+
+@media only screen and (max-width: 600px){
+    h1{
+        font-size:36px
+    }
+    .result{
+        display: flex;
+        flex-wrap: wrap;
+        margin:70px 0;
+        
+    }
+    .result h5{
+        margin:20px 0;
+    }
+}

@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1>Mohamud<span>24</span></h1>
+        </div>
+    </header>
+        <nav>
+            <div class="nav-container">
+            <ul>
+                <li><a href="../home/">Home</a></li>
+                <li><a href="#" >Service</a>
+                    <ul class="dropdown">
+                        <li><a href="#ch1">Chapter 1</a></li>
+                        <li><a href="#ch2">Chapter 2</a></li>
+                        <li><a href="#ch3">Chapter 3</a></li>
+                        <li><a href="#ch4">Chapter 4</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="homework.html">Home work</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+            </ul>
+            </div>
+        </nav>
+
+    <main>
+        <div class="sub-title">
+            <h2>Examples of chapter 1-4</h2>
+            <p>Click the Chapter you wish to See in navigation-section</p>
+
+        </div>
+
+        <div class="chapters-container">
+            <!-- chapter1 -->
+            <div id="ch1">
+                <div class="title">
+                    <p class="ch-names">Chapter-1<p>
+                    <button class="ch-names output-btn" onclick="chapterOne()">Output</button>
+                </div>
+
+                <h2>writting hello world in javascript</h2>
+                <div class="code">
+                    <code>
+                        &lt;script&gt;<br>
+                        console.log("hello world");<br>
+                        console.log("Welcome to javascript");<br>
+                        console.log("It's powerfull programming language");<br>
+                        &lt;&sol;script&gt;
+                    </code>
+                    <p id="ch1output"></p>
+                </div>
+                        
+            </div>
+                    
+                
+            <!-- chapter2 -->
+
+            <div id="ch2">
+                <div class="title">
+                    <p class="ch-names">Chapter-2<p>
+                    <button class="ch-names output-btn" onclick="chapterTwo()">Output</button>
+                </div>
+                <h2>Declare a variable, use Comments</h2>
+                <div class="code">
+                    <code>
+                        <!-- number -->
+                        <i>// using let keyword</i><br>
+                        let age = 30;<br><br>
+                        <i>// using var keyword</i><br>
+                        var price = 19.99;<br><br>
+                        <i>//display</i><br>
+                        console.log(age)<br>
+                        console.log(price)<br><br>
+                        <!-- string -->
+                        let name = "Mohamed";<br>
+                        <i>/*auto declare*/</i><br>
+                        message = 'Hello, World!';<br>
+                        <i>//display</i><br>
+                        console.log(name,message)<br><br>
+                        let isVisible = true;<br>
+                        let isLoggedIn = false;<br><br>
+                        let undefinedVar;<br>
+                        let emptyValue = null;<br><br>
+
+                    </code>
+                    <p id="ch2output"></p>
+                </div>
+                <div class="title-output-btn">
+                <h2>Arithmetic Operators</h2>
+                <button class="ch-names output-btn" onclick="chapterTwoArith()">Output</button>
+                </div>
+
+                <div class="code">
+                    <code>
+                        <i>// Addition</i><br>
+                        let sum = 5 + 3;<br>
+                        console.log(sum);<br><br>
+
+                        <i>// Subtraction</i><br>
+                        let sub = 24 - 10;<br>
+                        console.log(sub);<br><br>
+
+                        <i>// Multiplication</i><br>
+                        let  mult= 2 * 9;<br>
+                        console.log(mult)<br><br>
+
+                        <i>// divition</i><br>
+                        let div = 50 / 2;<br>
+                        console.log(div)<br><br>
+
+                        <i>// Exponentiation</i><br>
+                        let exp = 10 ** 2;<br>
+                        console.log(exp);<br><br>
+
+                        <i>// Modulus(Reminder)</i><br>
+                        var reminder = 10 % 5;<br>
+                        console.log(reminder);<br><br>
+
+                        <i>// Increment</i><br>
+                        let x = 5;<br>
+                        let y = x++; <br>
+                        console.log(x);<br>
+                        console.log(y);<br><br>
+
+                        <i>// Decrement</i><br>
+                        let m = 8;<br>
+                        let h = x--;<br>
+                        console.log(m);<br>
+                        console.log(h);<br><br>
+
+                    </code>
+                    <p id="ch2-p2-output"></p>
+                </div>
+                <div class="title-output-btn">
+                <h2>Comparison Operators</h2>
+                <button class="ch-names output-btn" onclick="chapterTwoComp()">Output</button>
+                </div>
+                <div class="code">
+                    <code>
+                        <i>// equal to</i><br>
+                        let isEqual = 2 == 3; <br>
+                        console.log(isEqual);<br><br>
+
+                        <i>// not equal</i><br>
+                        var isNotEqual = 4 != 4;<br>
+                        console.log(isNotEqual)<br><br>
+
+                        <i>// equal value and equal type</i><br>
+                        console.log(4 === 3);<br><br>
+
+                        <i>// not equal value or not equal type</i><br>
+                        console.log(4 !== 3);<br><br>
+
+                        <i>// less than</i><br>
+                        let isLessThan = 2 &lt;5;<br>
+                        console.log(isLessThan);<br><br>
+
+                        <i>// greater than</i><br>
+                        let isGreaterThan = 7>2<br>
+                        console.log(isGreaterThan)<br><br>
+
+                        <i>// less than or equal</i><br>
+                        x = 10 <= 10;<br>
+                        console.log(x);<br><br>
+
+                        <i>// greater than or equal</i><br>
+                        y = 5 >= 10;<br>
+                        console.log(y)<br><br>
+
+                        <i>// ternary operator</i><br>
+                        var ternary = 4>5?'It's true':'It's false;<br>
+                        console.log(ternary);<br>
+                    </code>
+                    <p id="ch2-p3-output"></p>
+                </div>
+                <div class="title-output-btn">
+                    <h2>Logical operators</h2>
+                    <button class="ch-names output-btn" onclick="chapterTwoLog()">Output</button>
+                </div>
+                <div class="code">
+                    <code>
+                        <i>// logical and</i><br>
+                        let isEqual = 2==3 && 4==4; <br>
+                        console.log(isEqual);<br><br>
+
+                        <i>// logical or</i><br>
+                        logicOr = 2==3 || 4==4;<br>
+                        console.log(logicOr);<br><br>
+
+                        <i>// logical not</i><br>
+                        let isTrue = !true;<br>
+                    </code>
+                    <p id="ch2-p4-output"></p>
+                </div>
+
+                <div class="title-output-btn">
+                    <h2>Assignment Operators</h2>
+                    <button class="ch-names output-btn" onclick="chapterTwoAss()">Output</button>
+                </div>
+                <div class="code">
+                    <code>
+                        let count = 10<br>
+                        count = 5;<br>
+                        console.log(count)<br><br>
+                        
+                        let price = 10;<br>
+                        price += 5;<br>
+                        console.log(price)<br><br>
+
+                        let salry = 10;<br>
+                        salary -= 5;<br>
+                        console.log(salary)<br><br>
+
+                        let discount = 10;<br>
+                        discount *=5;<br>
+                        console.log(discount)<br><br>
+
+                        let average = 10;<br>
+                        average /=5;<br>
+                        console.log(average)<br><br>
+
+                        let reminder = 10;<br>
+                        reminder %=5;<br>
+                        console.log(reminder)<br><br>
+
+                        let square = 2;<br>
+                        square **=5;<br>
+                        console.log(square)
+                    </code>
+                    <p id="ch2-p5-output"></p>
+                </div>
+                <div class="title-output-btn">
+                    <h2>Type Operator</h2>
+                    <button class="ch-names output-btn" onclick="chapterTwoTyopeOperator()">Output</button>
+                </div>
+                <div class="code">
+                    <code>
+                        console.log(typeof 4.5);<br>
+                        console.log(typeof 'Mohamud');<br><br>
+                        console.log(typeof NaN);<br>
+                        console.log(typeof false)<br>
+                        console.log(typeof [1,2,3,4]);<br><br>
+                        console.log(typeof {name:'Mohamud',age:34})<br>
+                        console.log(typeof function(){})<br>
+                        console.log(typeof myCar);<br>
+                        console.log(typeof null)
+                    </code>
+                    <p id="ch2-p6-output"></p>
+                </div>
+
+                <div class="title-output-btn">
+                    <h2>Automatic/Implicit type conversion</h2>
+                    <button class="ch-names output-btn" onclick="chapterTwoAutoTypeConversion()">Output</button>
+                </div>
+                <div class="code">
+                    <code>
+                        // Implicitly converts age to a string<br>
+                        // String Concatenation implicit conversion<br>
+                        let age = 25;<br>
+                        let message = "I am " + age + " years old.";<br>
+                        console.log(message);<br><br>
+
+                        // Numeric Operations implicit conversion<br>
+                        let numStr = "42";<br>
+                        let result = numStr * 2; <br>
+                        // Implicitly converts numStr to a number<br>
+                        console.log(result)<br><br>
+
+                        //Comparison Operators implicit conversion<br>
+                        let num = 10;<br>
+                        let strNum = "5";<br>
+                        // Implicitly converts strNum to a number for comparison<br>
+                        console.log(num > strNum);<br>
+                    </code>
+                    <p id="ch2-p7-output"></p>
+                </div>
+
+            </div>
+
+            <div id="ch3">
+                <div class="title">
+                    <p class="ch-names">Chapter-3<p>
+                    <button class="ch-names output-btn" onclick="chapterThree()">Output</button>
+                </div>
+                <h2>Template Literals</h2>
+                <div class="code">
+                    <code>
+                        const age = 18;<br>
+                        const message = `My age is ${age} years<br>
+                        I live in Mogadishu`<br>
+                        console.log(message);
+                    </code>
+                    <p id="ch3output"></p>
+                </div>
+
+                <div class="title-output-btn">
+                    <h2>Variable Swapping using Temp variable</h2>
+                    <button class="ch-names output-btn" onclick="chapterThreeVarS()">Output</button>
+                </div>
+                <div class="code">
+                    <code>
+                        // using temporary variable<br>
+                        let a = 5;<br>
+                        let b = 10;<br>
+                        let temp = a;<br>
+                        a = b;<br>
+                        b = temp;<br>
+                        console.log(`after swapping: a = ${a}, b = ${b}`);<br><br>
+                    </code>
+
+                    <p id="ch3-p2-output"></p>
+                </div>
+                <div class="title-output-btn">
+                    <h2>Using arithmetic operations</h2>
+                    <button class="ch-names output-btn" onclick="chapterThreeVarSwA()">Output</button>
+                </div>
+                <div class="code">
+                    <code>
+                        let a = 5;<br>
+                        let b = 10;<br>
+                        a = a + b;<br>
+                        b = a - b;<br>
+                        a = a - b;<br>
+                        console.log(`after swapping: a = ${a}, b = ${b}`);<br><br>
+                    </code>
+                    <p id="ch3-p3-output"></p>
+                </div>
+
+                <div class="title-output-btn">
+                    <h2>Conditional statements</h2>
+                    <button class="ch-names output-btn" onclick="chapterThreeCondIf()">Output</button>
+                </div>
+                <div clas="code">
+                    <code>
+                        let age = 18;<br>
+                        if (age >= 18) {<br>
+                        &nbsp;&nbsp;console.log("You are an adult")<br>}<br>
+                        else{<br>
+                            &nbsp;&nbsp;console.log("You are a minor");
+                        <br>}
+                    
+                    </code>
+                    <p id="ch3-p4-output"></p>
+                </div>
+
+                <div class="title-output-btn">
+                    <h2>Nested if</h2>
+                    <button class="ch-names output-btn" onclick="chapterThreeNestedIf()">Output</button>
+                </div>
+
+                <div class="code">
+                    <code>
+                        let grade = 85;<br>
+                        if (grade >=90) {<br>
+                            &nbsp;&nbsp;console.log("A");<br>
+                        }<br>
+                        else if (grade >=80){<br>
+                            &nbsp;&nbsp;console.log("B");<br>
+                        }<br>
+                        else {<br>
+                            &nbsp;&nbsp;console.log("C");
+                        <br>}
+                    </code>
+                    <p id="ch3-p5-output"></p>
+                </div>
+
+                <div class="title-output-btn">
+                    <h2>Switch statement</h2>
+                    <button class="ch-names output-btn" onclick="chapterThreeSwitch()">Output</button>
+                </div>
+                <div class="code">
+                    <code>
+                        let day = "Saturday";<br>
+                        switch (day) {<br>
+                        &nbsp;case "Saturday":<br>
+                        &nbsp;&nbsp;&nbsp;console.log("It's the start of the week.");<br>
+                        &nbsp;&nbsp;&nbsp;break;<br>
+                        &nbsp;case "Wedneday":<br>
+                        &nbsp;&nbsp;&nbsp;console.log("It's almost the weekend!");<br>
+                        &nbsp;&nbsp;&nbsp;break;<br>
+                        &nbsp;default:<br>
+                        &nbsp;&nbsp;&nbsp;console.log("It's a regular day.");<br>
+                        }
+                    </code>
+                    <p id="ch3-p6-output"></p>
+                </div>
+
+                <div class="title-output-btn">
+                    <h2>for loop</h2>
+                    <button class="ch-names output-btn" onclick="chapterThreeForLoop()">Output</button>
+                </div>
+                <div class="code">
+                    <code>
+                        for (let i = 1; i<= 5; i++) {<br>
+                            &nbsp;&nbsp;console.log(i)<br>
+                            
+                        }
+                    </code>
+                    <p id="ch3-p7-output"></p>
+                </div>
+
+                <div class="title-output-btn">
+                    <h2>while loop</h2>
+                    <button class="ch-names output-btn" onclick="chapterThreeWhileLoop()">Output</button>
+                </div>
+                <div class="code">
+                    <code>
+                        let i = 1;<br>
+                        while (i <= 5) {<br>
+                        &nbsp;&nbsp;console.log(i);<br>
+                        &nbsp;&nbsp;i++<br>
+                        }
+                    </code>
+                    <p id="ch3-p8-output"></p>
+                </div>
+
+                <div class="title-output-btn">
+                    <h2>Do-while loop</h2>
+                    <button class="ch-names output-btn" onclick="chapterThreeDoWhileLoop()">Output</button>
+                </div>
+
+                <div class="code">
+                    <code>
+                        let i = 1;<br>
+                        do {<br>
+                            console.log(i);<br>
+                            i++;<br>
+                        } while (i<=5);
+                    </code>
+                    <p id="ch3-p9-output"></p>
+                </div>
+
+                <div class="title-output-btn">
+                    <h2>Break</h2>
+                    <button class="ch-names output-btn" onclick="chapterThreeBreak()">Output</button>
+                </div>
+                <div class="code">
+                    <code>
+                        for (let i = 0; i < 5; i++) {<br>
+                        &nbsp;&nbsp;if(i === 3){<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                            &nbsp;&nbsp;}<br>
+                            &nbsp;&nbsp;console.log(i);<br>
+                        }
+                    </code>
+                    <p id="ch3-p10-output"></p>
+                </div>
+
+                <div class="title-output-btn">
+                    <h2>Continue</h2>
+                    <button class="ch-names output-btn" onclick="chapterThreeContinue()">Output</button>
+                </div>
+
+                <div class="code">
+                    <code>
+                        for (let i = 0; i < 5; i++) {<br>
+                        &nbsp;&nbsp;if(i === 2){<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;continue;<br>
+                            &nbsp;&nbsp;}<br>
+                            &nbsp;&nbsp;console.log(i);<br>
+                        }
+                    </code>
+                    <p id="ch3-p11-output"></p>
+                </div>
+
+                <div class="title-output-btn">
+                    <h2>Nested loops</h2>
+                    <button class="ch-names output-btn" onclick="chapterThreeNestedLoops()">Output</button>
+                </div>
+
+                <div class="code">
+                    <code>
+                        for (let i = 0; i < 3; i++){<br>
+                        &nbsp;&nbsp;for (let j = 0; j < 3; j++){<br>
+                        &nbsp;&nbsp;console.log(`${i}, ${j}`)<br>
+                        &nbsp;&nbsp;}<br><br>
+                        }
+                        <h2>Multiplication Table</h2>
+                        // define the size of multiplication table<br>
+                        const size = 10;<br>
+                        // outer loop<br>
+                        for (let i = 1; i <- size; i++) {<br>
+                        &nbsp;&nbsp;// inner loop<br>
+                        &nbsp;&nbsp;for (let j = 1; j <= size; j++ ){<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;// calculate and display the product<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;const product = i * j;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;console.log(`${i} * ${j} = ${product}`)<br>
+                        &nbsp;&nbsp;}<br>
+                        }
+                    </code>
+                    
+                    <p id="ch3-p12-output"></p>
+                </div>
+
+            </div>
+
+            <div id="ch4">
+                <div class="title">
+
+                    <p class="ch-names">Chapter-4<p>
+                    <button class="ch-names output-btn" onclick="chapterFour()">Output</button>
+                </div>
+                <h2>Functio declaration</h2>
+
+                <div class="code">
+                    <code>
+                        function functionName() {<br>
+                        &nbsp;&nbsp;console.log("Hello, world");<br>
+                        }<br><br>
+                        //Function calling<br>
+                        functionName()
+                    </code>
+                    <p id="ch4output"></p>
+                </div>
+                
+                <div class="title-output-btn">
+                    <h2>function with parameters</h2>
+                    <button class="ch-names output-btn" onclick="chapterFourFuncPara()">Output</button>
+                </div>
+                <div class="code">
+                    <code>
+                        function greet(name) {<br>
+                        &nbsp;&nbsp;console.log(`Hello, ${name}!`);<br>
+                            
+                        }<br>
+                          
+                          //Function calling<br>
+                          greet("Mohamud")
+                    </code>
+                    <p id="ch4-p2-output"></p>
+                </div>
+
+                <div class="title-output-btn">
+                    <h2>Value returning Functions</h2>
+                    <button class="ch-names output-btn" onclick="chapterFourValueReturn()">Output</button>
+                </div>
+                <div class="code">
+
+                    <code>
+                        function add(a, b){<br>
+                            return a + b;<br>
+                        }<br>
+                        const result = add(3, 5);<br>
+                        console.log(result);<br>
+                    </code>
+                    <p id="ch4-p3-output"></p>
+                    
+                </div>
+
+                <div class="title-output-btn">
+                    <h2>variable scope-global</h2>
+                    <button class="ch-names output-btn" onclick="chapterFourvariableScope()">Output</button>
+                </div>
+                <div class="code">
+                    <code>
+                        var globalVariable = "i'm in global scope";<br>
+                        function sayHello(){<br>
+                        &nbsp;&nbsp;console.log(globalVariable); // Accessible from within the function<br>
+                        }<br>
+                        sayHello();<br>
+                        console.log(globalVariable); // Accessible outside the function
+                    </code>
+                    <p id="ch4-p4-output"></p>
+                </div>
+            
+                <div class="title-output-btn">
+                    <h2>variable scope-local</h2>
+                    <button class="ch-names output-btn" onclick="chapterFourlocalVariable()">Output</button>
+                </div>
+
+                <div class="code">
+                    <code>
+                        function sayHello(){<br>
+                        var globalVariable = "i'm in global scope";<br>
+                        console.log(globalVariable); // Accessible within the function<br>
+                        }<br>
+                        sayHello();<br>
+                        console.log(globalVariable); // Results in an error; not accessible outside the function
+                    </code>
+                    <p id="ch4-p5-output"></p>
+                </div>
+
+                <div class="title-output-btn">
+                    <h2>block scope</h2>
+                    <button class="ch-names output-btn" onclick="chapterFourBlockScope()">Output</button>
+                </div>
+                <div class="code">
+                    <code>
+                        if (true){<br>
+                        &nbsp;&nbsp;let blockVariable = "I'm in block scope";<br>
+                        console.log(blockVariable); // Accessible within the block<br>
+                        }<br>
+                        console.log(blockVariable); // Results in an error; not accessible outside the function
+                        
+                    </code>
+                    <p id="ch4-p6-output"></p>
+                </div>
+
+                <div class="title-output-btn">
+                    <h2>Function parameters</h2>
+                    <button class="ch-names output-btn" onclick="chapterFourfuncParameter()">Output</button>
+                </div>
+                <div class="code">
+                    <code>
+                        function add(a, b){<br>
+                            &nbsp;&nbsp;var result = a +b;<br>
+                            return result<br>
+                        }
+                    </code>
+                    <p id="ch4-p7-output"></p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+    <footer>
+        <p>Copyright &copy; by Mohamud 2023</p>
+    </footer>
+</body>
+</html>

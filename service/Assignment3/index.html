@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    
+    <a href="../homework.html" class="back-btn">⬅ Back</a>
+    <h2 id="sum"></h2>
+
+<script>
+
+
+    let n = 0;
+    let number = Number(prompt("Enter a number:"));
+    while(isNaN(number)){
+        alert("Invalid number");
+        number = Number(prompt("Enter a number:"));
+        if(!isNaN(number)){
+            n += number;
+        }
+    }
+
+    // Calculate the sum from the entered number to 1
+    let sum = 0;
+    for(let i = number; i >= 1; i--) {
+        sum += i;
+    }
+
+    // Display the sum
+    console.log("The sum from " + n + " to 1 is: " + sum);
+    document.getElementById("sum").innerHTML=`Sum of ${number} to 1 is ${sum}`;
+
+</script>
+
+
+<footer class="fixed-footer">
+    <p>Copyright &copy; by Mohamud2023</p>
+</footer>
+</body>
+</html>

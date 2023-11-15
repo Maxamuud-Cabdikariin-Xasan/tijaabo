@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continue program</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        #output{
+            font-size: 24px;
+            margin:20px;
+            
+        }
+
+    </style>
+</head>
+<body>
+
+    <p id="output"></p>
+    <a href="../homework.html" class="back-btn">⬅ Back</a>
+    <script>
+        alert("The program will skip if you enter just")
+        var output = document.getElementById("output");
+        i = 0
+        while(i <4){
+            let university = prompt("Enter Your university: ");
+            i ++
+            if(university == "just" || university == "JUST"){
+                continue;
+            }
+            output.innerHTML += university +"<br>"
+            console.log(university);
+            
+            
+        }
+    </script>
+
+    <footer class="fixed-footer">
+        <p>Copyright &copy; by Mohamud2023</p>
+    </footer>
+</body>
+</html>

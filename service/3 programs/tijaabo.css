@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: poppins;
+}
+body{
+    background-color:rgba(30, 28, 28, 0.877);
+}
+
+header {
+    color:#fff;
+    text-align: center;
+    position:sticky;
+    top:0;
+    background-color: rgba(30, 28, 28, 0.877);
+    padding:5px 0;
+}
+.section{
+    background-color:orange;
+    color:#fff;
+    text-align:center;
+    padding:10px;
+    margin:0 0 80px;
+    height: 180px;
+    
+
+}
+p{
+    color:rgba(30, 28, 28, 0.877);
+}
+h1{
+    font-size: 4.5em;
+}
+
+h1::selection{
+    background-color: rgba(30, 28, 28, 0.877);
+}
+
+#click-button{
+    margin:10px 0 0;
+    background-color:rgba(30, 28, 28, 0.877);
+    border:none;
+    color:white;
+    padding:5px 10px;
+    border-radius:5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+#click-button:hover{
+    background-color:rgb(30, 28, 28);
+}
+img{
+    width: 50px;
+    
+}
+.vote-icon{
+    width: 50%;
+    margin:auto;
+}
+#vote-program-title,#income-statement-title,#num-checker-title,#income-statement-title{
+    position: relative;
+    text-decoration: underline;
+    z-index: -1;
+    margin-top:-30px;
+    color:orange;
+    transition: 0.7s margin-top;
+}
+
+span {
+    color:rgba(30, 28, 28, 0.877);
+}
+#voteResult,#numResult,#profitResult{
+    margin-top:-0.5em;
+}
+footer {
+    color:white;
+    text-align: center;
+    background-color:orange;
+
+}
+
+@media only screen and (max-width:360px) {
+    h1{
+        font-size: 2.5em;
+    }
+    p{
+        font-size: 0.8em;
+    }
+    .section {
+        height:140px;
+        margin:0 0 80px;
+        padding:10px;
+    }
+
+    #voteResult,#numResult,#profitResult{
+        margin-top:-0.8rem;
+    }
+
+    footer{
+        position:fixed;
+        padding:9px;
+        bottom:0;
+        width: 100%;
+        color:rgba(30, 28, 28, 0.877);
+    }
+}

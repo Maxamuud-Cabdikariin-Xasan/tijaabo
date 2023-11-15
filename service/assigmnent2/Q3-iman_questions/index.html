@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h2 id="ans"></h2>
+    
+    
+
+    <script>
+        let askuser = Number(prompt("waa imisa Tiirarka iimaanka?"));
+        switch(askuser){
+            case 6:
+                let mentionThem = Number(prompt(`Sheeg Tiirka 3aad ee Tiirarka Iimaanka: \n1-Rumeynta kutubada \n 2-Rumeynta Maalinta Aakhiro`));
+                switch(mentionThem) {
+                    case 1:
+                        let q3 = Number(prompt(`Sheeg Tiirka 5aad ee Tiirarka IImaanka \n 1-Rumeynta Maalinta Aakhiro \n 2-Rumeynta Nabiyada1`));
+
+                        switch(q3) {
+                            case 1:
+                                document.getElementById("ans").innerHTML="Marks:3";
+                                break;
+                            default:
+                                document.getElementById("ans").innerHTML="Marks:2"
+                        }
+                    break;
+                    default:
+                        document.getElementById("ans").innerHTML="Marks:1";
+                    }
+
+                break;
+            default:
+                document.getElementById("ans").innerHTML="Marks:0"
+        }
+
+    </script>
+</body>
+</html>
